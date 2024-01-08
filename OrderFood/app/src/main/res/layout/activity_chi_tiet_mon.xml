@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_below="@id/btnBack"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgAnhChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_menu_24"/>
+        </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_below="@+id/card"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tvTenMonChiTiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Ten san pham"/>
+                <TextView
+                    android:id="@+id/tvGiaMonChiTiet"
+                    android:layout_below="@+id/tvTenMonChiTiet"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Gia mon"/>
+
+
+    <Button
+        android:id="@+id/btnThemGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/primary"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/btncart"
+        android:text="Add to cart"/>
+
+    
+    <TextView
+        android:id="@+id/tvDescrip"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tvGiaMonChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Description"/>
+
+    <TextView
+        android:id="@+id/tvMoTa"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tvDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
